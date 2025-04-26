@@ -98,8 +98,7 @@ src/
 ## **🖼️ Screenshots**  
 | Styled Components | Tailwind CSS |  
 |-------------------|-------------|  
-| <img width="901" alt="image" src="https://github.com/user-attachments/assets/337778a3-7139-4b07-8f6a-0de10d3b9bc8" />
- | <img width="914" alt="image" src="https://github.com/user-attachments/assets/a3739025-04a6-4ad7-998c-3401fc96b5eb" />
+| <img width="901" alt="image" src="https://github.com/user-attachments/assets/337778a3-7139-4b07-8f6a-0de10d3b9bc8" /> | <img width="914" alt="image" src="https://github.com/user-attachments/assets/a3739025-04a6-4ad7-998c-3401fc96b5eb" /> 
  
 
 
