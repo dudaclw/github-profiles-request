@@ -1,5 +1,5 @@
 
-# **Consumo de API - Github **  
+# **Consumo de API - Github**  
 
 <div align="center">
   <img src="https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB" alt="React">
@@ -16,7 +16,7 @@ Compara duas abordagens de estilização:
 
 ---
 
-## ** Funcionalidades**  
+## **Funcionalidades**  
 - Busca de usuários do GitHub por username  
 - Exibição de:  
   - Foto do perfil  
@@ -49,8 +49,8 @@ Compara duas abordagens de estilização:
 ### **Instalação**  
 ```bash
 # Clone o repositório
-git clone https://github.com/dudaclw/github-profile-request.git
-cd github-profile-request
+git clone https://github.com/dudaclw/github-profiles-request.git
+cd github-profiles-request
 
 # Instale as dependências
 npm install
@@ -60,7 +60,9 @@ npm run dev
 ```
 
 ### **Acesso**  
-- Abra no navegador:  
+1. Utilize a Navbar para trocar entre os estilos;
+   
+2.Abra no navegador:  
   - **Styled Components**: `http://localhost:5173/styled`  
   - **Tailwind CSS**: `http://localhost:5173/tailwind`  
 
@@ -80,7 +82,7 @@ src/
 
 ---
 
-## **📝 Relatório Técnico **  
+## **📝 Relatório Técnico**  
 
 ### **Objetivos**  
 - Comparar abordagens de estilização em React  
@@ -96,7 +98,10 @@ src/
 ## **🖼️ Screenshots**  
 | Styled Components | Tailwind CSS |  
 |-------------------|-------------|  
-| <img src="./screenshots/styled-version.png" width="300"> | <img src="./screenshots/tailwind-version.png" width="300"> |  
+| <img width="901" alt="image" src="https://github.com/user-attachments/assets/337778a3-7139-4b07-8f6a-0de10d3b9bc8" />
+ | <img width="914" alt="image" src="https://github.com/user-attachments/assets/a3739025-04a6-4ad7-998c-3401fc96b5eb" />
+ 
+
 
 ---
 
