@@ -1,54 +1,111 @@
-# React + TypeScript + Vite
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+# **Consumo de API - Github **  
 
-Currently, two official plugins are available:
+<div align="center">
+  <img src="https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB" alt="React">
+  <img src="https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white" alt="TypeScript">
+  <img src="https://img.shields.io/badge/styled--components-DB7093?style=for-the-badge&logo=styled-components&logoColor=white" alt="Styled Components">
+  <img src="https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white" alt="Tailwind CSS">
+</div>
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## **📋 Descrição**  
+Aplicação web que busca e exibe perfis do GitHub, desenvolvida como trabalho para a disciplina de **Programação Web**. 
+Compara duas abordagens de estilização:  
+- **Styled Components** (CSS-in-JS)  
+- **Tailwind CSS** (Utility-first CSS)  
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+## ** Funcionalidades**  
+- Busca de usuários do GitHub por username  
+- Exibição de:  
+  - Foto do perfil  
+  - Nome de usuário  
+  - Lista de repositórios recentes  
+- 🎨 Duas rotas com estilos distintos:  
+  - `/styled` → Versão com Styled Components  
+  - `/tailwind` → Versão com Tailwind CSS  
 
-```js
-export default tseslint.config({
-  extends: [
-    // Remove ...tseslint.configs.recommended and replace with this
-    ...tseslint.configs.recommendedTypeChecked,
-    // Alternatively, use this for stricter rules
-    ...tseslint.configs.strictTypeChecked,
-    // Optionally, add this for stylistic rules
-    ...tseslint.configs.stylisticTypeChecked,
-  ],
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
+---
+
+## **🛠️ Tecnologias**  
+| Tecnologia | Finalidade |  
+|------------|------------|  
+| React + Vite | Framework frontend e tooling |  
+| TypeScript | Tipagem estática |  
+| Styled Components | Estilização CSS-in-JS |  
+| Tailwind CSS | Framework CSS utilitário |  
+| GitHub API | Integração com dados do GitHub |  
+| React Router | Navegação entre rotas |  
+
+---
+
+## **🚀 Como Executar**  
+
+### **Pré-requisitos**  
+- Node.js (v18+)  
+- npm ou yarn  
+
+### **Instalação**  
+```bash
+# Clone o repositório
+git clone https://github.com/dudaclw/github-profile-request.git
+cd github-profile-request
+
+# Instale as dependências
+npm install
+
+# Inicie o servidor de desenvolvimento
+npm run dev
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+### **Acesso**  
+- Abra no navegador:  
+  - **Styled Components**: `http://localhost:5173/styled`  
+  - **Tailwind CSS**: `http://localhost:5173/tailwind`  
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+---
 
-export default tseslint.config({
-  plugins: {
-    // Add the react-x and react-dom plugins
-    'react-x': reactX,
-    'react-dom': reactDom,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended typescript rules
-    ...reactX.configs['recommended-typescript'].rules,
-    ...reactDom.configs.recommended.rules,
-  },
-})
+## **📂 Estrutura do Projeto**  
 ```
+src/
+├── components/       # Componentes reutilizáveis
+├── hooks/            # Custom hooks
+├── pages/            # Páginas/rotas
+├── styles/           # Estilos globais
+├── utils/            # API
+├── App.tsx           # Configuração de rotas
+└── main.tsx          # Ponto de entrada
+```
+
+---
+
+## **📝 Relatório Técnico **  
+
+### **Objetivos**  
+- Comparar abordagens de estilização em React  
+- Consumir APIs REST com tratamento de erros  
+- Implementar boas práticas de componentização  
+
+### **Diferenciais**  
+✔ **Clean Architecture**  
+✔ **Feedback visual (loading/erros)**  
+
+---
+
+## **🖼️ Screenshots**  
+| Styled Components | Tailwind CSS |  
+|-------------------|-------------|  
+| <img src="./screenshots/styled-version.png" width="300"> | <img src="./screenshots/tailwind-version.png" width="300"> |  
+
+---
+
+## **📚 Documentação Adicional**  
+- [GitHub API Docs](https://docs.github.com/en/rest)  
+- [Styled Components](https://styled-components.com/docs)  
+- [Tailwind CSS](https://tailwindcss.com/docs)  
+
+---
+
+## **📄 Licença**  
+Este projeto está sob a licença MIT. Veja o arquivo [LICENSE](./LICENSE) para detalhes.
