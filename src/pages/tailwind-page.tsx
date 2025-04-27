@@ -3,13 +3,13 @@ import { useGithubUser } from '../hooks/use-github-user';
 import { GithubProfileTailwind } from '../components/github-profile-tailwind';
 
 export const TailwindPage = () => {
-  const [inputValue, setInputValue] = useState(''); // Substitui username por inputValue
+  const [inputValue, setInputValue] = useState(''); 
   const { user, repos, loading, error, fetchUserData } = useGithubUser();
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     if (inputValue.trim()) {
-      await fetchUserData(inputValue); // Usa inputValue em vez de username
+      await fetchUserData(inputValue); 
     }
   };
 
@@ -25,17 +25,15 @@ export const TailwindPage = () => {
             value={inputValue}
             onChange={(e) => setInputValue(e.target.value)}
             placeholder="Digite um nome de usuário do GitHub"
-            className="flex-1 px-4 py-3 border-2 border-gray-200 rounded-lg focus:outline-none focus:border-indigo-500 focus:ring-2 focus:ring-indigo-200 transition-all"
-          />
+            className="flex-1 px-4 py-3 border-2 border-gray-200 rounded-lg focus:outline-none focus:border-indigo-500 focus:ring-2 focus:ring-indigo-200 transition-all"/>
+          
           <button
             type="submit"
             disabled={loading}
-            className={`px-6 py-3 font-medium rounded-lg transition-all ${
-              loading
-                ? 'bg-gray-400 cursor-not-allowed'
-                : 'bg-indigo-600 text-white hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2'
-            }`}
-          >
+            className={`px-6 py-3 font-medium rounded-lg transition-all 
+            ${loading ? 'bg-gray-400 cursor-not-allowed' : 'bg-indigo-600 text-white hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2'}`
+            }>
+
             {loading ? 'Buscando...' : 'Buscar'}
           </button>
         </form>
