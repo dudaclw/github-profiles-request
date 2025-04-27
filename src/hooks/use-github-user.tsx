@@ -22,7 +22,6 @@ interface GithubUserData {
   error: string | null;
 }
 
-// Adicione esta interface para o retorno do hook
 interface UseGithubUserReturn extends GithubUserData {
   fetchUserData: (username: string) => Promise<void>;
 }
